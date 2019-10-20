@@ -1,0 +1,47 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>128</x><y>456</y><w>130</w><h>70</h></coordinates><panel_attributes>MannualToggle
+-
+- isEnabled: boolean
+-
++isEnabled(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>448</x><y>316</y><w>140</w><h>80</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Toggle
+-
+-
++ isEnabled(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>538</x><y>466</y><w>150</w><h>70</h></coordinates><panel_attributes>DisapearToggle
+-
+- disappearAt: Datetime
+-
++isEnabled(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>298</x><y>446</y><w>200</w><h>100</h></coordinates><panel_attributes>ProbabilisticToggle
+-
+- rangeStart: float
+- rangeEnd: float
+-
++ setRange(start: float, end: float)
++ isEnabled(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>708</x><y>456</y><w>130</w><h>70</h></coordinates><panel_attributes>AppearToggle
+-
+- appearAt: Datetime
+-
++isEnabled(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>188</x><y>386</y><w>300</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>280;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>528</x><y>386</y><w>250</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;230;70</additional_attributes></element><element><id>Relation</id><coordinates><x>398</x><y>386</y><w>120</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>100;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>378</x><y>627</y><w>270</w><h>60</h></coordinates><panel_attributes>ToggleControl
+-
+-
++ createToggle(context: toggleContext): Toggle</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>218</x><y>517</y><w>250</w><h>130</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;230;110</additional_attributes></element><element><id>Relation</id><coordinates><x>388</x><y>537</y><w>120</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;100;90</additional_attributes></element><element><id>Relation</id><coordinates><x>518</x><y>527</y><w>100</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>80;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>578</x><y>517</y><w>220</w><h>130</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>200;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>508</x><y>387</y><w>30</w><h>260</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;240</additional_attributes></element><element><id>UMLClass</id><coordinates><x>198</x><y>7</y><w>170</w><h>140</h></coordinates><panel_attributes>Experiment
+-
+- variants: Variants
+- startAt: Datetime
+- endAt: Datetime
+-
++ addVariant(variant: Variant)
++ start()
++ end()
++ totalParticipants(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>228</x><y>197</y><w>110</w><h>80</h></coordinates><panel_attributes>Variant
+-
+- feature: Feature
+- participants: int
+- probability: float</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>268</x><y>137</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>718</x><y>628</y><w>100</w><h>60</h></coordinates><panel_attributes>ToggleContext
+-
+tag: string
+userID: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>638</x><y>648</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>868</x><y>458</y><w>150</w><h>70</h></coordinates><panel_attributes>UserToggle
+-
+- userID: String
+-
++ isEnabled()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>358</y><w>380</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;360;100</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>518</y><w>350</w><h>130</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>330;10;10;110</additional_attributes></element></diagram>
