@@ -1,5 +1,10 @@
 # Toggle
+
 Modify system behavior without changing code.
+
+## Architecture
+
+![UML](doc/backend.png)
 
 ## Contributing
 
